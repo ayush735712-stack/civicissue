@@ -1,0 +1,162 @@
+.footer-section {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 4rem 0 2rem;
+  margin-top: auto;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.footer-brand-icon {
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-brand-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footer-brand-name span {
+  color: #3b82f6;
+}
+
+.footer-description {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  color: #94a3b8;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #cbd5e1;
+}
+
+.footer-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-menu a {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  transition: color var(--transition-fast);
+}
+
+.footer-menu a:hover {
+  color: #3b82f6;
+}
+
+.mission-card {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+.mission-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.mission-note {
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+.footer-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #1e293b;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  color: #e2e8f0;
+}
+
+.heart-icon {
+  color: #ef4444;
+}

@@ -1,0 +1,83 @@
+.stat-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-card-active {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  background-color: var(--primary-light);
+}
+
+.stat-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat-icon-container {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.stat-card-body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.stat-count {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.stat-subtitle {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Color Accents */
+.stat-card-blue .stat-icon-container {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.stat-card-red .stat-icon-container {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.stat-card-amber .stat-icon-container {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.stat-card-emerald .stat-icon-container {
+  background-color: #ecfdf5;
+  color: #10b981;
+}

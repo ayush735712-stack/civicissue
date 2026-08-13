@@ -1,0 +1,146 @@
+.issue-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 100%;
+}
+
+.issue-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-border);
+}
+
+.issue-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background-color: var(--bg-subtle);
+  overflow: hidden;
+}
+
+.issue-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.issue-card:hover .issue-card-image {
+  transform: scale(1.04);
+}
+
+.issue-card-badges {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: flex;
+  gap: 0.4rem;
+  z-index: 2;
+}
+
+.issue-category-tag {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.issue-card-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.issue-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.issue-id {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+}
+
+.issue-date {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.issue-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.issue-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.issue-card-footer {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.issue-location {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+  max-width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.location-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.issue-dept {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
